@@ -1,0 +1,15 @@
+<h2> {{ hero.name | uppercase }} Details</h2>
+<!-- This part shows the hero property like id an name in a static way 
+
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div>
+
+-->
+
+<!-- Introducing a way to allow the user to change the hero name
+   with a two-way binding using ngModule -->
+
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
